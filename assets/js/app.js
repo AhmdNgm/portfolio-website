@@ -17,3 +17,18 @@ for (var i = 0; i < navLink.length; i++) {
     openNav.classList.toggle("navToggle");
   });
 }
+
+// Get the container element
+const btnContainer = document.getElementById("links");
+
+// Get all buttons with class="btn" inside the container
+const btns = btnContainer.getElementsByClassName("link");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}

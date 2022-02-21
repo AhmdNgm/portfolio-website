@@ -260,10 +260,10 @@ body {
               .recent-tag {
                 font-size: 1.2rem;
                 background-color: #7833fe;
-                color: #e4e4e4;
+                color: #fff;
                 padding: 0 0.5rem;
                 margin-right: 0.5rem;
-                border-radius: 20px;
+                border-radius: 5px;
               }
             }
           }
@@ -346,10 +346,10 @@ body {
                 .card-tag {
                   font-size: 1.2rem;
                   background-color: #7833fe;
-                  color: #e4e4e4;
+                  color: #fff;
                   padding: 0 0.5rem;
                   margin-right: 0.5rem;
-                  border-radius: 20px;
+                  border-radius: 5px;
                 }
               }
             }
@@ -380,24 +380,28 @@ body {
         .contact-form {
           display: flex;
           justify-content: space-between;
-          align-items: flex-start;
+          align-items: center;
           flex-wrap: wrap;
           form {
             display: flex;
             flex-direction: column;
             width: 50%;
             height: 100%;
+            label {
+              font-size: 1.2rem;
+              margin-bottom: 0.25rem;
+              color: #222;
+              font-weight: 600;
+            }
             .input-field,
             textarea {
               padding: 1.25rem;
-              margin-bottom: 1.5rem;
+              margin-bottom: 1rem;
               color: #000;
               border-radius: 10px;
               border: 1px solid rgb(172, 172, 172);
-              &::placeholder {
-                color: #222;
-                font-size: 1.2rem;
-              }
+              font-size: 1.2rem;
+
               .textarea {
                 height: 6rem;
               }
@@ -425,6 +429,7 @@ body {
               font-size: 2rem;
               font-weight: bold;
               color: #222;
+              margin-bottom: 1rem;
             }
             p {
               font-size: 1.5rem;
@@ -635,10 +640,9 @@ body {
                 margin-top: 0.5rem;
                 .recent-tag {
                   font-size: 1.2rem;
-                  color: #e4e4e4;
+                  color: #fff;
                   padding: 0 0.5rem;
                   margin-right: 0.5rem;
-                  border-radius: 20px;
                 }
               }
             }
@@ -708,10 +712,9 @@ body {
                   margin-top: 0.5rem;
                   .card-tag {
                     font-size: 1.2rem;
-                    color: #e4e4e4;
+                    color: #fff;
                     padding: 0 0.5rem;
                     margin-right: 0.25rem;
-                    border-radius: 20px;
                   }
                 }
               }
@@ -744,10 +747,7 @@ body {
                 margin-bottom: 1.5rem;
                 color: #000;
                 border: 1px solid rgb(172, 172, 172);
-                &::placeholder {
-                  color: #222;
-                  font-size: 1.2rem;
-                }
+
                 .textarea {
                   height: 6rem;
                 }
@@ -923,11 +923,11 @@ body {
           height: 100%;
           margin-bottom: 2rem;
           .header-title {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #222;
           }
           .header-text {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 400;
             color: #888888;
           }
@@ -1058,10 +1058,9 @@ body {
                 margin-top: 0.5rem;
                 .recent-tag {
                   font-size: 1rem;
-                  color: #e4e4e4;
+                  color: #fff;
                   padding: 0 0.5rem;
                   margin-right: 0.5rem;
-                  border-radius: 20px;
                 }
               }
             }
@@ -1132,10 +1131,9 @@ body {
                   margin-top: 0.5rem;
                   .card-tag {
                     font-size: 1rem;
-                    color: #e4e4e4;
+                    color: #fff;
                     padding: 0 0.5rem;
                     margin-right: 0.25rem;
-                    border-radius: 20px;
                   }
                 }
               }
