@@ -126,12 +126,16 @@ body header .header-content .left .header-text {
 
 body header .header-content .right {
   width: 50%;
-  height: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 body header .header-content .right img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body main .about {
@@ -160,19 +164,23 @@ body main .about .about-section .about-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body main .about .about-section .about-content .about-left {
   width: 50%;
-  height: 100%;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 body main .about .about-section .about-content .about-left img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body main .about .about-section .about-content .about-right {
@@ -250,9 +258,9 @@ body main .recent-work .recent-work-content .recent-card {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #efefef;
   border-radius: 10px;
   margin: 2rem 0;
@@ -278,12 +286,14 @@ body main .recent-work .recent-work-content .recent-card .recent-card-body .rece
   font-size: 2rem;
   font-weight: bold;
   color: #222;
+  margin-bottom: 1rem;
 }
 
 body main .recent-work .recent-work-content .recent-card .recent-card-body .recent-card-text {
   font-size: 1.5rem;
   font-weight: 400;
   color: #636363;
+  margin-bottom: 1.5rem;
 }
 
 body main .recent-work .recent-work-content .recent-card .recent-card-body .recent-tags {
@@ -374,9 +384,9 @@ body main .work .work-content .work-cards .card .card-body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -388,11 +398,13 @@ body main .work .work-content .work-cards .card .card-body .card-title {
   font-size: 2rem;
   color: #222;
   line-height: 1.1;
+  margin-bottom: 1rem;
 }
 
 body main .work .work-content .work-cards .card .card-body .card-text {
   color: #636363;
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 body main .work .work-content .work-cards .card .card-body .tags {
@@ -437,9 +449,9 @@ body main .contact .contact-content .contact-form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -461,6 +473,7 @@ body main .contact .contact-content .contact-form form textarea {
   padding: 1.25rem;
   margin-bottom: 1.5rem;
   color: #000;
+  border-radius: 10px;
   border: 1px solid #acacac;
 }
 
@@ -501,6 +514,7 @@ body main .contact .contact-content .contact-form form .contact-btn {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 10px;
 }
 
 body main .contact .contact-content .contact-form form .contact-btn:hover {

@@ -85,10 +85,13 @@ body {
       }
       .right {
         width: 50%;
-        height: 100%;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
         img {
           width: 100%;
           height: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -110,13 +113,16 @@ body {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           .about-left {
             width: 50%;
-            height: 100%;
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
             img {
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
           }
           .about-right {
@@ -173,7 +179,7 @@ body {
         .recent-card {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           background-color: #efefef;
           border-radius: 10px;
           margin: 2rem 0;
@@ -191,11 +197,13 @@ body {
               font-size: 2rem;
               font-weight: bold;
               color: #222;
+              margin-bottom: 1rem;
             }
             .recent-card-text {
               font-size: 1.5rem;
               font-weight: 400;
               color: #636363;
+              margin-bottom: 1.5rem;
             }
             .recent-tags {
               display: flex;
@@ -260,17 +268,19 @@ body {
               padding: 1rem;
               display: flex;
               flex-direction: column;
-              justify-content: center;
+              justify-content: flex-start;
               align-items: flex-start;
               transition: all 200ms ease-in-out;
               .card-title {
                 font-size: 2rem;
                 color: #222;
                 line-height: 1.1;
+                margin-bottom: 1rem;
               }
               .card-text {
                 color: #636363;
                 font-size: 1.5rem;
+                margin-bottom: 1.5rem;
               }
               .tags {
                 display: flex;
@@ -305,7 +315,7 @@ body {
         .contact-form {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           flex-wrap: wrap;
           form {
             display: flex;
@@ -317,6 +327,7 @@ body {
               padding: 1.25rem;
               margin-bottom: 1.5rem;
               color: #000;
+              border-radius: 10px;
               border: 1px solid rgb(172, 172, 172);
               &::placeholder {
                 color: #222;
@@ -334,6 +345,7 @@ body {
               font-size: 1.5rem;
               text-decoration: none;
               font-weight: bold;
+              border-radius: 10px;
               &:hover {
                 background-color: #efefef;
                 color: #222;
