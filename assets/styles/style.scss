@@ -71,7 +71,6 @@ body {
   header {
     padding: 5rem 0;
     position: relative;
-    // background-color: #eff3f49d;
     .header-content {
       width: 1200px;
       min-height: 70vh;
@@ -117,6 +116,7 @@ body {
     .bg {
       position: absolute;
       background-image: url("/assets/img/bg.jpg");
+      background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;

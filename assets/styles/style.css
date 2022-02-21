@@ -159,6 +159,7 @@ body header .header-content .left .header-btn:hover {
 body header .bg {
   position: absolute;
   background-image: url("/assets/img/bg.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
