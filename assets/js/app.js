@@ -1,6 +1,6 @@
 // to toggle between fixed nav and static nav
 window.addEventListener("scroll", function () {
-  nav.classList.toggle("fixedNav", window.scrollY > 800);
+  nav.classList.toggle("fixedNav", window.scrollY > 0);
 });
 // to name our elements
 const openNav = document.getElementById("mobNav");
