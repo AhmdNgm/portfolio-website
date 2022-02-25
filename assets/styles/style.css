@@ -685,9 +685,6 @@ body footer .footer-text {
     font-weight: 400;
     text-decoration: none;
   }
-  body header {
-    padding: 5rem 0;
-  }
   body header .header-content {
     width: 95%;
     height: 100%;
@@ -1177,9 +1174,6 @@ body footer .footer-text {
     left: 0;
     -webkit-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
-  }
-  body header {
-    padding: 5rem 0;
   }
   body header .header-content {
     width: 95%;
