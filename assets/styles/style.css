@@ -15,7 +15,7 @@ body {
 }
 
 body nav {
-  background-color: #fff;
+  background-color: transparent;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   position: relative;
@@ -90,7 +90,7 @@ body .fixedNav {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #eff3f4;
+  background-color: #f8f4f0;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -100,13 +100,13 @@ body .nav-open {
 }
 
 body header {
-  padding: 5rem 0;
+  padding: 0;
   position: relative;
 }
 
 body header .header-content {
   width: 1200px;
-  min-height: 70vh;
+  min-height: 100vh;
   height: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -120,7 +120,8 @@ body header .header-content {
 
 body header .header-content .left {
   width: 50%;
-  height: 100%;
+  height: calc(100% - 80px);
+  margin-top: -250px;
 }
 
 body header .header-content .left .header-title {
@@ -158,7 +159,7 @@ body header .header-content .left .header-btn:hover {
 
 body header .bg {
   position: absolute;
-  background-image: url("/assets/img/bg.jpg");
+  background-image: url("/assets/img/bg.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -170,7 +171,7 @@ body header .bg {
 }
 
 body main .about {
-  background-color: #eff3f4;
+  background-color: #f8f4f0;
   padding: 5rem 0;
 }
 
@@ -318,7 +319,7 @@ body main .recent-work .recent-work-content .recent-card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eff3f4;
+  background-color: #f8f6f4;
   border-radius: 10px;
   margin: 2rem 0;
   overflow: hidden;
@@ -376,7 +377,7 @@ body main .recent-work .recent-work-content .recent-card .recent-card-body .rece
 }
 
 body main .work {
-  background-color: #eff3f4;
+  background-color: #f8f4f0;
   padding: 5rem 0;
 }
 
@@ -429,7 +430,7 @@ body main .work .work-content .work-cards .card:hover .card-body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #eff3f4ed;
+  background-color: #f8f4f0ed;
 }
 
 body main .work .work-content .work-cards .card .card-img {
@@ -569,7 +570,7 @@ body main .contact .contact-content .contact-form form textarea .textarea {
 
 body main .contact .contact-content .contact-form form .contact-btn {
   background-color: #222;
-  color: #eff3f4;
+  color: #f8f4f0;
   padding: 0.5rem;
   text-align: center;
   font-size: 1.5rem;
@@ -579,7 +580,7 @@ body main .contact .contact-content .contact-form form .contact-btn {
 }
 
 body main .contact .contact-content .contact-form form .contact-btn:hover {
-  background-color: #eff3f4;
+  background-color: #f8f4f0;
   color: #222;
 }
 
@@ -624,7 +625,7 @@ body main .contact .contact-content .contact-form .contact-right .contact-icons 
 }
 
 body footer {
-  background-color: #eff3f4;
+  background-color: #f8f4f0;
 }
 
 body footer .footer-text {
@@ -640,7 +641,7 @@ body footer .footer-text {
     background-color: #fff;
   }
   body nav {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
   }
   body nav .nav-content {
     width: 95%;
@@ -721,7 +722,7 @@ body footer .footer-text {
     height: 100%;
   }
   body main .about {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     padding: 5rem 0;
   }
   body main .about .about-section {
@@ -819,7 +820,7 @@ body footer .footer-text {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     border-radius: 10px;
     margin: 2rem 0;
     overflow: hidden;
@@ -859,7 +860,7 @@ body footer .footer-text {
     margin-right: 0.5rem;
   }
   body main .work {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     padding: 5rem 0;
   }
   body main .work .work-content {
@@ -897,7 +898,7 @@ body footer .footer-text {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: #eff3f4ed;
+    background-color: #f8f4f0ed;
   }
   body main .work .work-content .work-cards .card .card-img {
     width: 100%;
@@ -999,7 +1000,7 @@ body footer .footer-text {
   }
   body main .contact .contact-content .contact-form form .contact-btn {
     background-color: #222;
-    color: #eff3f4;
+    color: #f8f4f0;
     padding: 0.5rem;
     text-align: center;
     font-size: 1.5rem;
@@ -1007,7 +1008,7 @@ body footer .footer-text {
     font-weight: bold;
   }
   body main .contact .contact-content .contact-form form .contact-btn:hover {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     color: #222;
   }
   body main .contact .contact-content .contact-form .contact-right {
@@ -1043,7 +1044,7 @@ body footer .footer-text {
     color: #222;
   }
   body footer {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
   }
   body footer .footer-text {
     padding: 1rem 0;
@@ -1059,7 +1060,7 @@ body footer .footer-text {
     background-color: #fff;
   }
   body nav {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
   }
   body nav .nav-content {
     width: 95%;
@@ -1110,7 +1111,7 @@ body footer .footer-text {
   }
   body .nav-open {
     position: fixed;
-    background-color: #eff3f4fa;
+    background-color: #f8f4f0fa;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1224,7 +1225,7 @@ body footer .footer-text {
        object-fit: cover;
   }
   body main .about {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     padding: 5rem 0;
   }
   body main .about .about-section {
@@ -1331,7 +1332,7 @@ body footer .footer-text {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     border-radius: 10px;
     margin: 2rem 0;
     overflow: hidden;
@@ -1374,7 +1375,7 @@ body footer .footer-text {
     margin-right: 0.5rem;
   }
   body main .work {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     padding: 5rem 0;
   }
   body main .work .work-content {
@@ -1413,7 +1414,7 @@ body footer .footer-text {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: #eff3f4ed;
+    background-color: #f8f4f0ed;
   }
   body main .work .work-content .work-cards .card .card-img {
     width: 100%;
@@ -1538,7 +1539,7 @@ body footer .footer-text {
   }
   body main .contact .contact-content .contact-form form .contact-btn {
     background-color: #222;
-    color: #eff3f4;
+    color: #f8f4f0;
     padding: 0.5rem;
     text-align: center;
     font-size: 1.5rem;
@@ -1546,7 +1547,7 @@ body footer .footer-text {
     font-weight: bold;
   }
   body main .contact .contact-content .contact-form form .contact-btn:hover {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
     color: #222;
   }
   body main .contact .contact-content .contact-form .contact-right {
@@ -1582,7 +1583,7 @@ body footer .footer-text {
     color: #222;
   }
   body footer {
-    background-color: #eff3f4;
+    background-color: #f8f4f0;
   }
   body footer .footer-text {
     padding: 1rem 0;
