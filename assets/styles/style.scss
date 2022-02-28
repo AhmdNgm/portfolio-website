@@ -71,27 +71,27 @@ body {
   header {
     padding: 0;
     position: relative;
+
     .header-content {
       width: 1200px;
       min-height: 100vh;
       height: 100%;
       margin: 0 auto;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       position: relative;
       .content {
-        width: 50%;
+        width: 80%;
         height: calc(100% - 80px);
-        margin-top: -250px;
-
+        margin-top: 5rem;
         .header-title {
-          font-size: 3rem;
+          font-size: 5rem;
           font-weight: bold;
           color: #222;
-          margin-bottom: 1.5rem;
+          margin-bottom: 1rem;
         }
         .header-text {
-          font-size: 1.5rem;
+          font-size: 2rem;
           font-weight: 400;
           color: #636363;
           margin-bottom: 2rem;
@@ -117,7 +117,7 @@ body {
     }
     .bg {
       position: absolute;
-      background-image: url("/assets/img/bg.png");
+      background-image: url("/assets/img/jan-huber-gsJv1UnDTYM-unsplash.jpg");
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -154,7 +154,7 @@ body {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           .about-left {
             width: 50%;
             height: 500px;
@@ -165,7 +165,7 @@ body {
               height: 100%;
               object-fit: cover;
               &:hover {
-                transform: scale(1.15);
+                transform: scale(1.2);
                 transition: all 250ms ease-in-out;
               }
             }
@@ -232,12 +232,13 @@ body {
         .recent-card {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           background-color: #f8f6f4;
           border-radius: 10px;
           margin: 2rem 0;
           overflow: hidden;
           .recent-card-img {
+            overflow: hidden;
             width: 50%;
             &:hover {
               filter: saturate(1%);
@@ -245,6 +246,7 @@ body {
             }
           }
           .recent-card-body {
+            width: 50%;
             padding: 1rem;
             .recent-card-title {
               font-size: 2rem;
@@ -386,7 +388,7 @@ body {
         .contact-form {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           flex-wrap: wrap;
           form {
             display: flex;
@@ -477,7 +479,6 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
     nav {
-      background-color: #f8f4f0;
       .nav-content {
         width: 95%;
         height: 80px;
@@ -511,22 +512,23 @@ body {
     header {
       .header-content {
         width: 95%;
-        height: 100%;
-        margin: 0 auto;
+        min-height: 100vh;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         .content {
-          width: 50%;
-          height: 100%;
+          width: 100%;
+          margin: 5rem 0;
           .header-title {
-            font-size: 3rem;
-            font-weight: bold;
+            font-size: 5rem;
             color: #222;
           }
           .header-text {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 400;
-            color: #888888;
+            color: #888;
+            width: 100%;
           }
         }
       }
@@ -606,7 +608,7 @@ body {
           .recent-card {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             background-color: #f8f4f0;
             border-radius: 10px;
             margin: 2rem 0;
@@ -809,7 +811,6 @@ body {
 
     header {
       nav {
-        background-color: #f8f4f0;
         .nav-content {
           width: 95%;
           height: 80px;
@@ -1017,6 +1018,7 @@ body {
               object-fit: cover;
             }
             .recent-card-body {
+              width: 100%;
               padding: 1rem;
               .recent-card-title {
                 font-size: 1.5rem;

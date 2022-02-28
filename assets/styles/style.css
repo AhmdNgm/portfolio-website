@@ -112,27 +112,27 @@ body header .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
 }
 
 body header .header-content .content {
-  width: 50%;
+  width: 80%;
   height: calc(100% - 80px);
-  margin-top: -250px;
+  margin-top: 5rem;
 }
 
 body header .header-content .content .header-title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
   color: #222;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 body header .header-content .content .header-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #636363;
   margin-bottom: 2rem;
@@ -160,7 +160,7 @@ body header .header-content .content .header-btn:hover {
 
 body header .bg {
   position: absolute;
-  background-image: url("/assets/img/bg.png");
+  background-image: url("/assets/img/jan-huber-gsJv1UnDTYM-unsplash.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -207,9 +207,9 @@ body main .about .about-section .about-content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body main .about .about-section .about-content .about-left {
@@ -227,8 +227,8 @@ body main .about .about-section .about-content .about-left img {
 }
 
 body main .about .about-section .about-content .about-left img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
@@ -317,9 +317,9 @@ body main .recent-work .recent-work-content .recent-card {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #f8f6f4;
   border-radius: 10px;
   margin: 2rem 0;
@@ -327,6 +327,7 @@ body main .recent-work .recent-work-content .recent-card {
 }
 
 body main .recent-work .recent-work-content .recent-card .recent-card-img {
+  overflow: hidden;
   width: 50%;
 }
 
@@ -338,6 +339,7 @@ body main .recent-work .recent-work-content .recent-card .recent-card-img:hover 
 }
 
 body main .recent-work .recent-work-content .recent-card .recent-card-body {
+  width: 50%;
   padding: 1rem;
 }
 
@@ -528,9 +530,9 @@ body main .contact .contact-content .contact-form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -641,9 +643,6 @@ body footer .footer-text {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
   }
-  body nav {
-    background-color: #f8f4f0;
-  }
   body nav .nav-content {
     width: 95%;
     height: 80px;
@@ -688,28 +687,34 @@ body footer .footer-text {
   }
   body header .header-content {
     width: 95%;
-    height: 100%;
-    margin: 0 auto;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   body header .header-content .content {
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    margin: 5rem 0;
   }
   body header .header-content .content .header-title {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 5rem;
     color: #222;
   }
   body header .header-content .content .header-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    color: #888888;
+    color: #888;
+    width: 100%;
   }
   body main .about {
     background-color: #f8f4f0;
@@ -807,9 +812,9 @@ body footer .footer-text {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background-color: #f8f4f0;
     border-radius: 10px;
     margin: 2rem 0;
@@ -1048,9 +1053,6 @@ body footer .footer-text {
   body {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
-  }
-  body header nav {
-    background-color: #f8f4f0;
   }
   body header nav .nav-content {
     width: 95%;
@@ -1319,6 +1321,7 @@ body footer .footer-text {
        object-fit: cover;
   }
   body main .recent-work .recent-work-content .recent-card .recent-card-body {
+    width: 100%;
     padding: 1rem;
   }
   body main .recent-work .recent-work-content .recent-card .recent-card-body .recent-card-title {
